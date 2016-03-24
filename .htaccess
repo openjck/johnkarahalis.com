@@ -1,1 +1,2 @@
-Redirect 302 / https://openjck.com
+RewriteEngine on
+RewriteRule ^(.*)$ https://openjck.com/? [R=302,L]
