@@ -1,0 +1,18 @@
+[[headers]]
+
+    for = '/*'
+
+    [headers.values]
+
+        Strict-Transport-Security = 'max-age=63072000; preload'
+        Content-Security-Policy = "default-src 'none'"
+        X-Content-Type-Options = 'nosniff'
+        X-Frame-Options = 'DENY'
+        X-XSS-Protection = '1; mode=block'
+
+[[redirects]]
+
+    from = "https://johnkarahalis.com/*"
+    to = "https://openjck.com/:splat"
+    status = 302
+    force = true
