@@ -1,6 +1,23 @@
+[build]
+
+    command = 'npm run build'
+    publish = 'dist'
+
+[[headers]]
+
+    for = '/*'
+
+    [headers.values]
+
+        Strict-Transport-Security = 'max-age=63072000; preload'
+        Content-Security-Policy = "default-src 'self'; script-src 'self' www.googletagmanager.com www.google-analytics.com; connect-src 'self' www.googletagmanager.com www.google-analytics.com; img-src 'self' www.googletagmanager.com www.google-analytics.com; object-src 'none'"
+        X-Content-Type-Options = 'nosniff'
+        X-Frame-Options = 'DENY'
+        X-XSS-Protection = '1; mode=block'
+
 [[redirects]]
 
-    from = "/*"
-    to = "https://openjck.com"
-    status = 302
+    from = "https://compassionate-stonebraker-ee8a06.netlify.com/*"
+    to = "https://www.johnkarahalis.com/:splat"
+    status = 301
     force = true
