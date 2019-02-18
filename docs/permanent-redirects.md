@@ -1,2 +1,28 @@
-As of 2018-01-06, I am not aware of any permanent redirects (301 redirects)
-which have ever been published from this domain.
+The table below lists URLs which have been permanently redirected (301
+redirected) at some point. This list is not necessarily exhaustive.
+
+All *From* URLs should be considered unusable except to permanently redirect to
+the corresponding *To* URLs.
+
+<table>
+    <thead>
+        <tr>
+            <th>From</th>
+            <th>To</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>http://johnkarahalis.com*</td>
+            <td>https://johnkarahalis.com[match]</td>
+        </tr>
+        <tr>
+            <td>http://www.johnkarahalis.com*</td>
+            <td>https://www.johnkarahalis.com[match]</td>
+        </tr>
+        <tr>
+            <td>https://johnkarahalis.com*</td>
+            <td>https://www.johnkarahalis.com[match]</td>
+        </tr>
+    </tbody>
+</table>
