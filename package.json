@@ -10,6 +10,6 @@
     },
     "devDependencies": {
         "parcel": "1.11.0",
-        "posthtml-expressions": "1.1.0"
+        "posthtml-expressions": "1.1.1"
     }
 }
