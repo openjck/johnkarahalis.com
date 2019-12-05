@@ -86,14 +86,14 @@ li a {
     content: '\f09b';
 }
 
-#linkedin a:before {
-    font-family: 'Font Awesome 5 Brands';
-    content: '\f08c';
-}
-
 #keybase a:before {
     font-family: 'Font Awesome 5 Brands';
     content: '\f4f5';
+}
+
+#linkedin a:before {
+    font-family: 'Font Awesome 5 Brands';
+    content: '\f08c';
 }
 
 #email a:before {
