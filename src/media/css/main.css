@@ -72,24 +72,32 @@ li a {
 
 #sites a:before {
     display: block;
-    font-family: FontAwesome;
     font-size: 1.7rem;
     margin-bottom: .5rem;
 }
 
 #blog a:before {
+    font-family: 'Font Awesome 5 Free';
     content: '\f022';
 }
 
 #github a:before {
+    font-family: 'Font Awesome 5 Brands';
     content: '\f09b';
 }
 
 #linkedin a:before {
+    font-family: 'Font Awesome 5 Brands';
     content: '\f08c';
 }
 
+#keybase a:before {
+    font-family: 'Font Awesome 5 Brands';
+    content: '\f4f5';
+}
+
 #email a:before {
+    font-family: 'Font Awesome 5 Free';
     content: '\f0e0';
 }
 
