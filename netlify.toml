@@ -21,3 +21,8 @@
     to = "https://www.johnkarahalis.com/:splat"
     status = 301
     force = true
+
+    from = "https://compassionate-stonebraker-ee8a06.netlify.app/*"
+    to = "https://www.johnkarahalis.com/:splat"
+    status = 301
+    force = true
