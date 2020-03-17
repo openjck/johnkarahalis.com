@@ -10,6 +10,6 @@
         "@fortawesome/fontawesome-free": "5.12.1",
         "parcel": "1.12.4",
         "parcel-plugin-static-files-copy": "2.3.1",
-        "posthtml-expressions": "1.1.1"
+        "posthtml-expressions": "1.2.0"
     }
 }
