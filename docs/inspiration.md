@@ -1,3 +1,3 @@
-* stevelosh.com
-* gkoberger.net
-* get.wunderkit.com
+- stevelosh.com
+- gkoberger.net
+- get.wunderkit.com

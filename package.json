@@ -1,15 +1,20 @@
 {
-    "name": "johnkarahalis.com",
-    "private": true,
-    "staticPath": "src/static",
-    "scripts": {
-        "dev": "parcel serve src/index.html src/404.html",
-        "build": "parcel build src/index.html src/404.html"
-    },
-    "dependencies": {
-        "@fortawesome/fontawesome-free": "5.13.0",
-        "parcel": "2.0.0-beta.1",
-        "parcel-plugin-static-files-copy": "2.3.1",
-        "posthtml-expressions": "1.3.0"
-    }
+  "name": "johnkarahalis.com",
+  "private": true,
+  "staticPath": "src/static",
+  "scripts": {
+    "dev": "parcel serve src/index.html src/404.html",
+    "build": "parcel build src/index.html src/404.html",
+    "format": "prettier --write .",
+    "test": "prettier --check ."
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.13.0",
+    "parcel": "2.0.0-beta.1",
+    "parcel-plugin-static-files-copy": "2.3.1",
+    "posthtml-expressions": "1.3.0"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
+  }
 }

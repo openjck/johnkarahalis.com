@@ -3,139 +3,141 @@
 
    http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
-    background: #38648b url('../img/noise.png');
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.5em;
-    margin: 0 auto;
-    max-width: 700px;
-    padding: 25px;
+  background: #38648b url("../img/noise.png");
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 25px;
 }
 
-body, a {
-    color: #fff;
+body,
+a {
+  color: #fff;
 }
 
 h1 {
-    font-size: 1.4em;
-    letter-spacing: .03em;
-    margin: 0;
-    text-align: center;
+  font-size: 1.4em;
+  letter-spacing: 0.03em;
+  margin: 0;
+  text-align: center;
 }
 
 p {
-    line-height: 1.5;
-    margin: .8rem 0 .6rem;
-    text-align: center;
+  line-height: 1.5;
+  margin: 0.8rem 0 0.6rem;
+  text-align: center;
 }
 
 section h2 {
-    display: none;
+  display: none;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 li {
-    display: inline-block;
+  display: inline-block;
 }
 
 li:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 /* External site button and label */
 li a {
-    display: block;
-    font-size: .8rem;
-    text-decoration: none;
+  display: block;
+  font-size: 0.8rem;
+  text-decoration: none;
 
-    /* Give the buttons padding, but also offset that padding with an equivalent
+  /* Give the buttons padding, but also offset that padding with an equivalent
        negative margin-bottom. Without the offset, the padding would add space
        below the main content, and the main content would not be perfectly
        centered vertically. */
-    padding: 1.5rem;
-    margin-bottom: -1.5rem;
+  padding: 1.5rem;
+  margin-bottom: -1.5rem;
 }
 
 /*** Icons ***/
 
 #sites a:before {
-    display: block;
-    font-size: 1.7rem;
-    margin-bottom: .5rem;
+  display: block;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
 }
 
 #blog a:before {
-    font-family: 'Font Awesome 5 Free';
-    content: '\f022';
+  font-family: "Font Awesome 5 Free";
+  content: "\f022";
 }
 
 #github a:before {
-    font-family: 'Font Awesome 5 Brands';
-    content: '\f09b';
+  font-family: "Font Awesome 5 Brands";
+  content: "\f09b";
 }
 
 #keybase a:before {
-    font-family: 'Font Awesome 5 Brands';
-    content: '\f4f5';
+  font-family: "Font Awesome 5 Brands";
+  content: "\f4f5";
 }
 
 #linkedin a:before {
-    font-family: 'Font Awesome 5 Brands';
-    content: '\f08c';
+  font-family: "Font Awesome 5 Brands";
+  content: "\f08c";
 }
 
 #email a:before {
-    font-family: 'Font Awesome 5 Free';
-    content: '\f0e0';
+  font-family: "Font Awesome 5 Free";
+  content: "\f0e0";
 }
-
 
 /*** Vertically center ***/
 
 html {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    display: table;
-    height: 100%;
+  display: table;
+  height: 100%;
 }
 
 main {
-    display: table-cell;
-    vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /* 700px = main content width */
 @media all and (max-width: 700px) {
-    li {
-        width: 50%;
-        float: left;
-    }
+  li {
+    width: 50%;
+    float: left;
+  }
 }
 
 /* 400px = width at which two columns leave too much whitespace */
 @media all and (min-width: 400px) and (max-width: 700px) {
-    li {
-        width: 33%;
-    }
+  li {
+    width: 33%;
+  }
 }
 
 @media all and (max-width: 400px) {
-    main {
-        vertical-align: top;
-    }
+  main {
+    vertical-align: top;
+  }
 }
