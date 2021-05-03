@@ -6,8 +6,8 @@ html {
   box-sizing: border-box;
 }
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -73,44 +73,51 @@ li a {
 
 /*** Icons ***/
 
-#sites a:before {
+#sites a::before {
   display: block;
   font-size: 1.7rem;
   margin-bottom: 0.5rem;
 }
 
-#blog a:before {
+#blog a::before {
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Font Awesome 5 Free";
   content: "\f022";
 }
 
-#github a:before {
+#github a::before {
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Font Awesome 5 Brands";
   content: "\f09b";
 }
 
-#keybase a:before {
+#keybase a::before {
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Font Awesome 5 Brands";
   content: "\f4f5";
 }
 
-#linkedin a:before {
+#linkedin a::before {
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Font Awesome 5 Brands";
   content: "\f08c";
 }
 
-#email a:before {
+#email a::before {
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Font Awesome 5 Free";
   content: "\f0e0";
 }
 
 /*** Vertically center ***/
 
+/* stylelint-disable-next-line no-duplicate-selectors */
 html {
   height: 100%;
   width: 100%;
 }
 
+/* stylelint-disable-next-line no-duplicate-selectors */
 body {
   display: table;
   height: 100%;
