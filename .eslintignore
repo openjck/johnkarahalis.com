@@ -6,4 +6,5 @@
 
 # Inverse matches (do lint these)
 !.eslintrc.js
+!.parcelrc
 !.stylelintrc.js
