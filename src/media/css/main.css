@@ -2,6 +2,7 @@
    allows us to change the main content padding without doing any math.
 
    http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* stylelint-disable rule-empty-line-before */
 html {
   box-sizing: border-box;
 }
@@ -10,6 +11,7 @@ html {
 *::after {
   box-sizing: inherit;
 }
+/* stylelint-enable rule-empty-line-before */
 
 body {
   background: #38648b url("../img/noise.png");
