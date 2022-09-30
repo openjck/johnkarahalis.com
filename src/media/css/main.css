@@ -110,12 +110,6 @@ li a {
   content: "\f4f5";
 }
 
-#linkedin a::before {
-  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
-  font-family: "Font Awesome 5 Brands";
-  content: "\f08c";
-}
-
 #email a::before {
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Font Awesome 5 Free";
