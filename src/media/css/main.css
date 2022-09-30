@@ -81,6 +81,17 @@ li a {
   margin-bottom: 0.5rem;
 }
 
+#thoughts a::before {
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: "Font Awesome 5 Free";
+
+  /**
+   * TODO: A thought bubble would be better. Font Awesome 5 doesn't have one,
+   * but Font Awesome 6 does.
+   */
+  content: "\f075";
+}
+
 #blog a::before {
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Font Awesome 5 Free";
