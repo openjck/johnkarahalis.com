@@ -110,6 +110,12 @@ li a {
   content: "\f4f5";
 }
 
+#namedrop a::before {
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: "Font Awesome 5 Free";
+  content: "\f144";
+}
+
 #email a::before {
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Font Awesome 5 Free";
