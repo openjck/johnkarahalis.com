@@ -83,12 +83,17 @@ li a {
   font-size: 0.8rem;
   text-decoration: none;
 
-  /* Give the buttons padding, but also offset that padding with an equivalent
-       negative margin-bottom. Without the offset, the padding would add space
-       below the main content, and the main content would not be perfectly
-       centered vertically. */
+  /**
+   * Give the buttons padding, but also offset that padding with an equivalent
+   * negative margin-bottom. Without the offset, the padding would add space
+   * below the main content, and the main content would not be perfectly
+   * centered vertically.
+   */
   padding: 1.5rem;
   margin-bottom: -1.5rem;
+
+  /* Bring the icons a little closer. */
+  margin-top: -0.5rem;
 }
 
 /*** Icons ***/
