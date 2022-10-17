@@ -34,13 +34,13 @@ h1 {
   text-align: center;
 }
 
-section {
-  text-align: center;
-}
-
 p,
 #location {
   line-height: 1.5;
+}
+
+#location {
+  text-align: center;
 }
 
 p {
