@@ -40,8 +40,19 @@ p {
   text-align: center;
 }
 
-h2 {
-  display: none;
+/**
+ * Only show these headings to screen readers.
+ *
+ * https://css-tricks.com/inclusively-hidden/
+ */
+h2:not(:focus):not(:active) {
+  clip-path: inset(50%);
+  clip: rect(0 0 0 0);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 ul {
