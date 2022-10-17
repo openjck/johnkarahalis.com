@@ -75,7 +75,7 @@ li a {
 
 /*** Icons ***/
 
-#sites a::before {
+#links a::before {
   display: block;
   font-size: 1.7rem;
   margin-bottom: 0.5rem;
