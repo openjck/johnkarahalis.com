@@ -1,7 +1,9 @@
-/* This is especially helpful when vertically centering the main content, as it
-   allows us to change the main content padding without doing any math.
-
-   http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/**
+ * This is especially helpful when vertically centering the main content, as it
+ * allows us to change the main content padding without doing any math.
+ *
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
 /* stylelint-disable rule-empty-line-before */
 html {
   box-sizing: border-box;
@@ -39,12 +41,24 @@ p,
   line-height: 1.25;
 }
 
+p {
+  margin: 0.8rem 0 0.6rem;
+}
+
 #location {
   text-align: center;
 }
 
-p {
-  margin: 0.8rem 0 0.6rem;
+#introduction {
+  margin: 25px 0;
+}
+
+#introduction p:first-of-type {
+  margin-top: 0;
+}
+
+#introduction p:last-of-type {
+  margin-bottom: 0;
 }
 
 /**
@@ -62,41 +76,32 @@ h2:not(:focus):not(:active) {
   width: 1px;
 }
 
-ul {
+/*** Icons ***/
+
+#links ul {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(auto-fill, 100px);
+  justify-content: center;
+  justify-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+#links li {
+  width: 100%;
+  display: block;
+  height: 100%;
   text-align: center;
 }
 
-li {
-  display: inline-block;
-}
-
-li:first-child {
-  margin-left: 0;
-}
-
-/* External site button and label */
-li a {
+#links a {
   display: block;
   font-size: 0.8rem;
   text-decoration: none;
-
-  /**
-   * Give the buttons padding, but also offset that padding with an equivalent
-   * negative margin-bottom. Without the offset, the padding would add space
-   * below the main content, and the main content would not be perfectly
-   * centered vertically.
-   */
-  padding: 1.5rem;
-  margin-bottom: -1.5rem;
-
-  /* Bring the icons a little closer. */
-  margin-top: -0.5rem;
+  padding: 10px;
 }
-
-/*** Icons ***/
 
 #links a::before {
   display: block;
@@ -125,6 +130,12 @@ li a {
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Font Awesome 5 Brands";
   content: "\f09b";
+}
+
+#gitlab a::before {
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: "Font Awesome 5 Brands";
+  content: "\f296";
 }
 
 #keybase a::before {
@@ -162,25 +173,4 @@ body {
 main {
   display: table-cell;
   vertical-align: middle;
-}
-
-/* 700px = main content width */
-@media all and (max-width: 700px) {
-  li {
-    width: 50%;
-    float: left;
-  }
-}
-
-/* 400px = width at which two columns leave too much whitespace */
-@media all and (min-width: 400px) and (max-width: 700px) {
-  li {
-    width: 33%;
-  }
-}
-
-@media all and (max-width: 400px) {
-  main {
-    vertical-align: top;
-  }
 }
