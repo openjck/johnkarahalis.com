@@ -66,7 +66,7 @@ p {
  *
  * https://css-tricks.com/inclusively-hidden/
  */
-h2:not(:focus):not(:active) {
+h2:not(:focus, :active) {
   clip-path: inset(50%);
   clip: rect(0 0 0 0);
   height: 1px;
