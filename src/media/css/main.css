@@ -126,12 +126,6 @@ h2:not(:focus, :active) {
   content: "\f022";
 }
 
-#linkedin a::before {
-  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
-  font-family: "Font Awesome 5 Brands";
-  content: "\f08c";
-}
-
 #github a::before {
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Font Awesome 5 Brands";
