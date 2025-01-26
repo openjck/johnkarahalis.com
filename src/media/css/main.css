@@ -137,7 +137,7 @@ h2:not(:focus, :active) {
   font-family: "Font Awesome 5 Brands";
   content: "\f296";
 }
- 
+
 #linkedin a::before {
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Font Awesome 5 Brands";
