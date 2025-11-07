@@ -109,21 +109,22 @@ h2:not(:focus, :active) {
   margin-bottom: 0.5rem;
 }
 
-#thoughts a::before {
-  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
-  font-family: "Font Awesome 5 Free";
-
-  /**
-   * TODO: A thought bubble would be better. Font Awesome 5 doesn't have one,
-   * but Font Awesome 6 does.
-   */
-  content: "\f075";
-}
-
 #blog a::before {
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Font Awesome 5 Free";
   content: "\f022";
+}
+
+#thoughts a::before {
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: "Font Awesome 5 Free";
+  content: "\f075";
+}
+
+#medium a::before {
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: "Font Awesome 5 Brands";
+  content: "\f23a";
 }
 
 #github a::before {
@@ -160,6 +161,12 @@ h2:not(:focus, :active) {
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Font Awesome 5 Free";
   content: "\f0e0";
+}
+
+/* TODO: Remove after the migration is done. */
+#footnotes {
+  font-size: .6em;
+  margin-top: 25px;
 }
 
 /*** Vertically center ***/
