@@ -165,7 +165,7 @@ h2:not(:focus, :active) {
 
 /* TODO: Remove after the migration is done. */
 #footnotes {
-  font-size: .6em;
+  font-size: 0.6em;
   margin-top: 25px;
 }
 
