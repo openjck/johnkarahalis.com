@@ -115,12 +115,6 @@ h2:not(:focus, :active) {
   content: "\f022";
 }
 
-#thoughts a::before {
-  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
-  font-family: "Font Awesome 5 Free";
-  content: "\f075";
-}
-
 #github a::before {
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Font Awesome 5 Brands";
@@ -155,12 +149,6 @@ h2:not(:focus, :active) {
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "Font Awesome 5 Free";
   content: "\f0e0";
-}
-
-/* TODO: Remove after the migration is done. */
-#footnotes {
-  font-size: 0.6em;
-  margin-top: 25px;
 }
 
 /*** Vertically center ***/
