@@ -84,18 +84,20 @@
 
             <li id="email">
               <!--
-                Surprisingly, this actually does foil most harvesters:
-                https://spencermortensen.com/articles/email-obfuscation/#link-entity
+                The following article outlines some email obfuscation methods
+                that, despite their simplicity, actually work:
 
-                I used this tool to convert the text to entities, since it's the
-                only one I could find which perfectly matched the results in the
-                blog post:
-                https://succulent-plant.com/toys/asciitohtml.html
+                https://spencermortensen.com/articles/email-obfuscation/
+
+                Unfortunately, Parcel undoes many if not all of those methods
+                while compressing HTML documents. It doesn't appear to be
+                possible to configure Parcel to leave those parts of documents
+                document alone while compressing other parts. Even if it were,
+                it might be too much of a hassle.
+
+                I'll just rely on my spam filter.
               -->
-              <a
-                href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#104;&#110;&#64;&#106;&#111;&#104;&#110;&#107;&#97;&#114;&#97;&#104;&#97;&#108;&#105;&#115;&#46;&#99;&#111;&#109;"
-                >Email</a
-              >
+              <a href="mailto:john@johnkarahalis.com">Email</a>
             </li>
           </ul>
         </nav>
