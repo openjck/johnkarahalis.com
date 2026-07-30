@@ -4,7 +4,7 @@
     "staticPath": "src/static"
   },
   "scripts": {
-    "dev": "parcel serve src/index.html src/404.html",
+    "dev": "UMAMI_WEBSITE_ID=123 parcel serve src/index.html src/404.html",
     "build": "parcel build src/index.html src/404.html",
     "check": "biome check",
     "check:fix": "biome check --write"
