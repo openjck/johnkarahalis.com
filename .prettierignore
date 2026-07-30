@@ -1,6 +1,0 @@
-# Node
-package-lock.json
-
-# Parcel
-/dist/
-.parcel-cache/
