@@ -1,6 +1,4 @@
-# Node
-node_modules/
-
-# Parcel
+# Ignore generated files.
 /dist/
-.parcel-cache/
+/node_modules/
+/.parcel-cache/
