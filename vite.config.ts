@@ -1,0 +1,26 @@
+import { resolve } from "node:path";
+import { defineConfig } from "vite";
+
+const root = "src";
+
+export default defineConfig({
+  root: "src",
+  input: {
+    main: resolve(import.meta.dirname, root, "index.html"),
+    notFound: resolve(import.meta.dirname, root, "404.html"),
+  },
+  build: {
+    // Build a "dist" directory at the repo root, not the Vite project root
+    // ("src").
+    outDir: resolve(import.meta.dirname, "dist"),
+
+    // When "outDir" is outside the Vite project root ("src"), Vite does not
+    // empty it before running a build, so that nothing important is
+    // inadvertently deleted.
+    //
+    // I don't plan to ever put anything important in "dist", and a clean build
+    // ensures old artifacts are removed, so I feel comfortable with Vite
+    // emptying it.
+    emptyOutDir: true,
+  },
+});

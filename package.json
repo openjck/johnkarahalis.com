@@ -1,24 +1,22 @@
 {
   "private": true,
-  "staticFiles": {
-    "staticPath": "src/static"
-  },
+  "type": "module",
   "scripts": {
-    "dev": "UMAMI_WEBSITE_ID=123 parcel serve src/index.html src/404.html",
-    "build": "parcel build src/index.html src/404.html",
     "check": "biome check",
-    "check:fix": "biome check --write"
+    "check:fix": "biome check --write",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "5.15.4"
+    "@fortawesome/fontawesome-free": "^7.3.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.6",
+    "@biomejs/biome": "^2.5.15",
     "@openjck/biome-config": "^2.0.0",
-    "@parcel/transformer-image": "2.16.4",
+    "@types/node": "^26.6.4",
     "npm-run-all2": "^9.0.3",
-    "parcel": "^2.16.4",
-    "parcel-reporter-static-files-copy": "1.5.3",
-    "posthtml-expressions": "^1.11.4"
+    "typescript": "^7.0.2",
+    "vite": "^8.3.2"
   }
 }

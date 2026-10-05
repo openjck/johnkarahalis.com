@@ -4,7 +4,7 @@
     <script
       defer
       src="https://cloud.umami.is/script.js"
-      data-website-id="{{ UMAMI_WEBSITE_ID }}"
+      data-website-id="%VITE_UMAMI_WEBSITE_ID%"
     ></script>
 
     <meta charset="utf-8" />
@@ -16,16 +16,12 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="./media/css/main.css" />
-    <link
-      rel="stylesheet"
-      href="../node_modules/@fortawesome/fontawesome-free/css/all.css"
-    />
-    <link rel="icon" href="./media/icons/favicon.ico" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="icon" href="/favicon.ico" />
 
     <meta
       name="google-site-verification"
-      content="Rr7BEO_BPGcLi9Qk84vRZbUhYEW9uhjIZcwcYvgnh6Q"
+      content="%VITE_GOOGLE_SITE_VERIFICATION%"
     />
   </head>
 
@@ -84,25 +80,20 @@
 
             <li id="email">
               <!--
-                The following article outlines some email obfuscation methods
-                that, despite their simplicity, actually work:
+                Obfuscate the email address in a way that, apparently,
+                actually works.
 
                 https://spencermortensen.com/articles/email-obfuscation/
-
-                Unfortunately, Parcel undoes many if not all of those methods
-                while compressing HTML documents. It doesn't appear to be
-                possible to configure Parcel to leave those parts of documents
-                document alone while compressing other parts. Even if it were,
-                it might be too much of a hassle.
-
-                I'll just rely on my spam filter.
               -->
-              <a href="mailto:john@johnkarahalis.com">Email</a>
+              <a href="mailto:&#x6A;&#x6F;&#x68;&#x6E;&#x40;&#x6A;&#x6F;&#x68;&#x6E;&#x6B;&#x61;&#x72;&#x61;&#x68;&#x61;&#x6C;&#x69;&#x73;&#x2E;&#x63;&#x6F;&#x6D;">Email</a>
             </li>
           </ul>
         </nav>
       </section>
     </main>
-    <script type="module" src="./media/js/track-outbound-link-clicks.js"></script>
+    <script
+      type="module"
+      src="/assets/js/track-outbound-link-clicks.ts"
+    ></script>
   </body>
 </html>

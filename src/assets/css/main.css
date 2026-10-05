@@ -1,3 +1,5 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
 /**
  * This is especially helpful when vertically centering the main content, as it
  * allows us to change the main content padding without doing any math.
