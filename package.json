@@ -2,8 +2,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "check": "biome check",
-    "check:fix": "biome check --write",
+    "check": "npm-run-all check:*",
+    "check:biome": "biome check",
+    "check:tsc": "tsc",
+    "fix": "biome check --write",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
