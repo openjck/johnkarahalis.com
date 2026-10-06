@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 const root = "src";
 
 export default defineConfig({
-  root: "src",
+  root,
   input: {
     main: resolve(import.meta.dirname, root, "index.html"),
     notFound: resolve(import.meta.dirname, root, "404.html"),
