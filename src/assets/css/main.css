@@ -127,6 +127,12 @@ h2:not(:focus, :active) {
   content: "\f296";
 }
 
+#boardgamegeek a::before {
+  /* biome-ignore lint/a11y/useGenericFontNames: No reasonable fallback */
+  font-family: "Font Awesome 5 Brands";
+  content: "\e855";
+}
+
 #keybase a::before {
   /* biome-ignore lint/a11y/useGenericFontNames: No reasonable fallback */
   font-family: "Font Awesome 5 Brands";
